@@ -1,14 +1,27 @@
 body {
   font-family: "Poppins", sans-serif;
   background: #0d7be9;
+  color: white;
 }
 
 .container {
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .grid {
   display: grid;
+  grid-gap: 64px;
+}
+.img-responsive {
+  max-width: 100%;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+  margin-top: 35px;
+}
+
+.grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
@@ -121,5 +134,12 @@ footer a {
 
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
   }
 }
